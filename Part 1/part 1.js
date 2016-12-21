@@ -22,7 +22,7 @@
 	in order to square the numbers create a function called square and call it inside rangeSquared function
 	rangeSquared(2)// [4];
 	rangeSquared(3) // null
-	rangeSquared(2,10)// [4,16,12,16,100];
+	rangeSquared(2,10)// [4,16,36,64,100];
 */
 // write your code here ...
 
@@ -35,4 +35,56 @@
 */
 
 // write your code here ....
+// (1).....
+	var students =[];
+	function  makeStudent(name,age,education,nationality){
+		var obj ={
+			Name: name,
+			Age: age,
+			Education: education,
+			Nationality: nationality
+		}
+	return students.push(obj);
+	}
+
+// a-
+function MohammadHasan(){
+	var str="";
+	for (var i = 0; i < students.length; i++) {
+		if(students[i]["Name"]==="Mohammad"||students[i]["Name"]==="Hasan"){
+			str+="Name :"+students[i]["Name"]+",Age :"+students[i]["Age"]+",Education :"+students[i]["Education"]+",Nationality :"+students[i]["Nationality"]+"\n ";
+		}
+	}
+return str;
+} 
+
+// b-
+function showFriend(target){
+var str="";
+	for (var i = 0; i < students.length; i++) {
+		if(students[i]["Name"]===target||students[i]["Age"]===target||students[i]["Education"]===target||students[i]["Nationality"]===target){
+			str+="Name :"+students[i]["Name"]+",Age :"+students[i]["Age"]+",Education :"+students[i]["Education"]+",Nationality :"+students[i]["Nationality"]+"\n ";
+		}
+	}
+return str;
+}
+
+	
+// c-
+
+function leaders(array){
+	var led=[];
+	var flag= true;
+	for(var j = 0; j < array.length; j++){
+		flag = true;
+		for (var i = j; i < array.length-1; i++) {			 
+			 	flag=flag&&(array[j]>array[i+1]);			 
+		}
+		if (flag===true){
+			led.push(array[j])
+		}
+	}
+	return led;
+}
+
 

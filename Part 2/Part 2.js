@@ -32,3 +32,48 @@
  */
 
 //writ your code here .....
+// a-
+function Player(name){
+ var x={}; 
+ x.level = 0;
+ x.Name = name
+ x.addInfo = addInfo
+ x.increaseLevel =increaseLevel
+ x.isAvailable = isAvailable
+
+return x;
+}
+
+// b-
+var addInfo = function(age, position, level, availability){
+
+	this.age = age,
+	this.position = position,
+	this.level = level,
+	this.availability = availability
+}
+
+// c-
+
+var increaseLevel = function(n){
+	this.level+=n;
+}
+
+// d-
+
+var isAvailable = function(){
+	 
+	 return this.availability;
+}
+
+// e-
+var arrayOfPlayers= [];
+function (x){
+	return arrayOfPlayers.push(x);
+}
+
+
+// f-
+function (array){
+ array.each()
+}

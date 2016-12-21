@@ -1,0 +1,15 @@
+body {
+	background: blue;
+
+}
+
+body.textinput {
+	font-family: italic;
+}
+
+input{
+width :25;
+height: 30;	
+}
+
+
